@@ -72,9 +72,8 @@ QUERY :
 
 QUERY :
 
-|USE company_db;|
-|---------------|
-|SELECT * FROM employees;|
+|USE company_db;
+SELECT * FROM employees;|
 |-----------------------|
 
 🟢OUTPUT :
