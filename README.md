@@ -3,25 +3,31 @@
 STEP 1: CREATING DATABASE AND TABLE
 
 --CREATE DATABASE
+
 CREATE DATABASE company_db;
 
 --USE THE DATABASE
+
 USE company_db;
 
 --CREATE TABLE
+
 CREATE TABLE employees(
    Emp id INT PRIMARY KEY,
    Name VARCHAR(50),
    Dept VARCHAR(50),
    Salary DECIMAL(10,2)
 );
+
 --INSERT SAMPLE DATA
+
 INSERT INTO employees VALUES
 (1,'Rasi','HR',45000.00),
 (2,'Charlie','IT',60000.00),
 (3,'Udaya','Finance',55000.00);
 
 --VIEW TABLE
+
 SELECT * FROM employees;
 
 
