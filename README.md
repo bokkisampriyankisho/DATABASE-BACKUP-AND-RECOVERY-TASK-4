@@ -46,6 +46,7 @@ Command(MySQL Dump method)
 
 QUERY:
 
+|---------------------------------------------------------|
 |mysqldump -u root -p company_db > company_db_backup.sql|
 
 👉This creates a backup file(cpmpany_db_backup.sql) containong all structure and data.
