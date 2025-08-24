@@ -56,6 +56,7 @@ QUERY:
 QUERY:
 
 |DROP DTABASE company_db;|
+|-------------------------|
 
 👉Now the database is lost.
 
