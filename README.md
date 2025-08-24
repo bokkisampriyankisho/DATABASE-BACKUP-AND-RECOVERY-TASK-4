@@ -1,6 +1,6 @@
 # DATABASE-BACKUP-AND-RECOVERY-TASK-4
 
-STEP 1: CREATING DATABASE AND TABLE
+1️⃣STEP 1: CREATING DATABASE AND TABLE
 
 --CREATE DATABASE
 
@@ -31,7 +31,7 @@ INSERT INTO employees VALUES
 SELECT * FROM employees;
 
 
-OUTPUT:
+🟢OUTPUT:
 
 |Emp id |Name   |Dept   |Salary   |
 |-------|-------|-------|---------|
@@ -40,38 +40,40 @@ OUTPUT:
 | 3     | Udaya | Finance|55000.00|
 
 
-STEP 2: TAKE A BACKUP OF DATABASE
+2️⃣STEP 2: TAKE A BACKUP OF DATABASE
 
-Command(MySQL Dump method)
+|----------------------------|
+|Command(MySQL Dump method) |
+|---------------------------|
 
 QUERY:
 
 mysqldump -u root -p company_db > company_db_backup.sql
 
-This creates a backup file(cpmpany_db_backup.sql) containong all structure and data.
+👉This creates a backup file(cpmpany_db_backup.sql) containong all structure and data.
 
-STEP 3: SIMULATE DATABASE FAILURE(DROP DATABASE)
+3️⃣STEP 3: SIMULATE DATABASE FAILURE(DROP DATABASE)
 
 QUERY:
 
 DROP DTABASE company_db;
 
-Now the database is lost.
+👉Now the database is lost.
 
-STEP 4: RESTORE DATABASE FROM BACKUP
+4️⃣STEP 4: RESTORE DATABASE FROM BACKUP
 
 QUERY :
 
 mysql -u root -p company_db < company_db_backup.sql
 
-STEP 5: VERIFY RESTORED DATABASE
+5️⃣STEP 5: VERIFY RESTORED DATABASE
 
 QUERY :
 
 USE company_db;
 SELECT * FROM employees;
 
-OUTPUT :
+🟢OUTPUT :
 
 | EMp id| Name    | Dept    | Salary   |
 |-------|---------|---------|----------|
