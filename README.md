@@ -73,6 +73,7 @@ QUERY :
 QUERY :
 
 |USE company_db;|
+|---------------|
 |SELECT * FROM employees;|
 |-----------------------|
 
