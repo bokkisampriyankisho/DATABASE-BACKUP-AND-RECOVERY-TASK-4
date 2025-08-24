@@ -48,6 +48,7 @@ QUERY:
 
 
 |mysqldump -u root -p company_db > company_db_backup.sql|
+|---------------------------------------------------------|
 
 👉This creates a backup file(cpmpany_db_backup.sql) containong all structure and data.
 
@@ -65,6 +66,7 @@ QUERY:
 QUERY :
 
 |mysql -u root -p company_db < company_db_backup.sql|
+|---------------------------------------------------|
 
 5️⃣STEP 5: VERIFY RESTORED DATABASE
 
@@ -72,6 +74,7 @@ QUERY :
 
 |USE company_db;
 SELECT * FROM employees;|
+|-----------------------|
 
 🟢OUTPUT :
 
